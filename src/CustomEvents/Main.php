@@ -13,7 +13,7 @@ class Main extends PluginBase implements Listener{
     $this->getServer()->getLogger()->notice('CustomEvents Plugin Enabled and Created by Angel');
   }
   
-  public function callTestCustomEvent(){
+  public function callCustomTestEvent(){
     $this->getServer()->getPluginManager()->callEvent($ev = new TestCustomEvent($this));
   }
   
