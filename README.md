@@ -1,2 +1,4 @@
 # CustomEvents
-Custom Event plugin for developers that don't know!
+Custom Event plugin for developers who don't know!
+
+__ WORKS __
