@@ -2,14 +2,24 @@
 
 namespace CustomEvents\Events;
 
-use CustomEvents\Main;
-
 use pocketmine\event\plugin\PluginEvent;
 use pocketmine\event\Cancellable;
+use pocketmine\plugin\Plugin;
 
-class CustomEventAPI extends PluginEvent implements Cancellable{ 
-	
-	public function __construct(Main $plugin){
+/**
+ * Class CustomEventAPI
+ * @package CustomEvents\Events
+ */
+class CustomEventAPI extends PluginEvent implements Cancellable{
+
+	/** @var Plugin */
+	protected $plugin;
+
+	/**
+	 * CustomEventAPI constructor.
+	 * @param Plugin $plugin
+	 */
+	public function __construct (Plugin $plugin){
 		parent::__construct($plugin);
 	}
 }
